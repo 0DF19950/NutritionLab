@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# data is large and reproducible - never commit it
+data/
+*.csv
+*.jsonl
+*.parquet
+*.gz
+.off_categories.json
+
+# except the hand-labelled evaluation set, which is NOT reproducible
+!eval/
+!eval/*.csv
+
+# stale local backups
+_backup_stale/
